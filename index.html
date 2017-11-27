@@ -1,120 +1,211 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>GllacyShop</title>
-    <link rel="stylesheet" href="css/normalize.css">
-  </head>
-  <body>
-    <header class="main-header container">
-      <div class="main-header-logo">
-        <img src="#" alt="GllacyShop">
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>GllacyShop</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <input type="radio" name="slide" id="slide-1" checked>
+  <input type="radio" name="slide" id="slide-2">
+  <input type="radio" name="slide" id="slide-3">
+  <div class="wrapper">
+    <header class="main-header container clearfix">
+      <a class="main-header_logo" href="#"></a>
       <nav class="main-header-navigation">
-        <ul class="main-header-navigation-list">
-          <li class="main-header-navigation-list__element"><a class="main-header-navigation-list__element__link" href="#">Каталог</a></li>
-          <li class="main-header-navigation-list__element"><a class="nav-list-element-link" href="#">Доставка и оплата</a></li>
-          <li class="main-header-navigation-list__element"><a class="nav-list-element-link" href="#">О компании</a></li>
+        <ul>
+          <li><a href="#">Каталог</a></li><li><a href="#">Доставка и оплата</a></li><li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <div class="search">
-        <a class="search-link" class="btn" href="#"></a>
+      <ul class="main-header-user">
+        <li class="main-header-user_search"><a href="#"></a></li><li class="main-header-user_login"><a href="#">Вход</a></li><li class="main-header-user_cart"><a href="#">Пусто</a></li>
+      </ul>
+      <div class="main-header-contacts">
+        <span>С 10 до 20, ежедневно</span>
+        <span>8 812 450-25-25</span>
       </div>
-      <div class="user-block">
-        <a class="user-block-link" class="btn" href="#">Вход</a>
-      </div>
-      <div class="cart">
-        <a class="cart-link" class="btn" href="#"></a>
-      </div>
-      <div class="main-contacts">
-        <span class="main-contacnts-date">с 10 до 20, ежедневно</span>
-        <span class="main-contacts-phone">8 812 450-25-25</span>
-      </div>
+    </header>
+    <main class="container">
       <div class="slider">
-        <input class="slider__radio" type="radio" name="slide" value="" id="slide-1" checked>
-        <input class="slider__radio" type="radio" name="slide" value="" id="slide-2">
-        <input class="slider__radio" type="radio" name="slide" value="" id="slide-3">
         <div class="slider-controls">
-          <label class="slider-controls__label label-1" for="slide-1"></label>
-          <label class="slider-controls__label label-2" for="slide-2"></label>
-          <label class="slider-controls__label label-3" for="slide-3"></label>
+          <label for="slide-1"></label>
+          <label for="slide-2"></label>
+          <label for="slide-3"></label>
         </div>
-        <div class="slider-visible">
-          <div class="slider-visible-slides">
-            <div class="slider-visible-slides-1">
-              <p>Крем-брюле и пломбир с малиновым джемом</p>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider-visible-slides-2">
-              <p>Крем-брюле и пломбир с малиновым джемом</p>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider-visible-slides-3">
-              <p>Крем-брюле и пломбир с малиновым джемом</p>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
+        <div class="slider-slides clearfix">
+          <div class="slide">
+            <p>Крем-брюле и пломбир <br> с малиновым джемом</p>
+            <a class="btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide">
+            <p>Шоколадный пломбир <br> и лимонный сорбет</p>
+            <a class="btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide">
+            <p>Пломбир с помадкой <br> и клубничный щебрет</p>
+            <a class="btn" href="#">Давайте оба!</a>
           </div>
         </div>
       </div>
-    </header>
-    <main class="main container">
-      <div class="main-banners">
-        <div class="main-banners-left">
-
+      <div class="main-banners clearfix">
+        <div class="main-banners-left raspberry">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="btn" href="#">Хочу варенье!</a>
         </div>
-        <div class="main-banners-right">
-
-        </div>
-      </div>
-      <div class="main-hits">
-        <div class="main-hits-left">
-
-        </div>
-        <div class="main-hits-right">
-
+        <div class="main-banners-right chocolate">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+          <a class="btn" href="#">Хочу шоколадки!</a>
         </div>
       </div>
-      <section class="main-about-us">
-        <h2>Магазин Глейси - это онлайн и офлайн магазин по проаже мороженого собственного производства на развес</h2>
-        <div class="main-about-us-left">
-
-        </div>
-        <div class="main-about-us-right">
-
-        </div>
+      <ul class="main-hits clearfix">
+        <li>
+          <a class="hit" href="#">
+            <img class="hit_photo" src="img/hit_ice-cream-orange.png" alt="hit_ice-cream-orange" width="200px" height="200px">
+            <p class="hit_price"><span>310 ₽</span>/кг</p>
+            <p class="hit_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <button class="btn">Быстрый просмотр</button>
+          </a>
+        </li>
+        <li>
+          <a class="hit" href="#">
+            <img class="hit_photo" src="img/hit_ice-cream-chocolate.png" alt="hit_ice-cream-orange" width="200px" height="200px">
+            <p class="hit_price"><span>380 ₽</span>/кг</p>
+            <p class="hit_name">Сливочно-кофейное с кусочками шоколада</p>
+            <button class="btn">Быстрый просмотр</button>
+          </a>
+        </li>
+        <li>
+          <a class="hit" href="#">
+            <img class="hit_photo" src="img/hit_ice-cream-strawberry.png" alt="hit_ice-cream-orange" width="200px" height="200px">
+            <p class="hit_price"><span>355 ₽</span>/кг</p>
+            <p class="hit_name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <button class="btn">Быстрый просмотр</button>
+          </a>
+        </li>
+        <li>
+          <a class="hit" href="#">
+            <img class="hit_photo" src="img/hit_ice-cream-caramel.png" alt="hit_ice-cream-orange" width="200px" height="200px">
+            <p class="hit_price"><span>415 ₽</span>/кг</p>
+            <p class="hit_name">Сливочное крем-брюле с карамельной подливкой</p>
+            <button class="btn">Быстрый просмотр</button>
+          </a>
+        </li>
+      </ul>
+      <section class="main-about-us clearfix">
+        <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже <br> мороженого собственного производства на развес</h2>
+        <p class="making">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p class="purchase">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+        <p class="quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты произведены из натурального, экологиески чистого сырья</p>
+        <p class="delivery">Доставка нашего мороженого до заказчиков осущствляется в специальном термопаке, которая не дает мороженому растять в пути и позволяет ему сохранить свой превосходный вкус.</p>
       </section>
       <div class="main-banners">
         <div class="main-banners-left blog-news">
-
+          <h2>Новое в нашем блоге</h2>
+          <p><a href="#"><span>10 способов сервировки</span><span>фруктовых щербетов</span><br><span>к столу</span></a></p>
         </div>
         <div class="main-banners-right subscribe">
-
+          <p>Подпишитесь на нашу сладкую рассылку <br> и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спать и не слать всякой не нужной ерудны. Честно =)</p>
+          <form class="subscribe-email" action="index.html" method="post">
+            <input type="text" name="email" value="" id="email">
+            <label for="email"></label>
+            <input class="btn" type="submit" name="" value="Отправить">
+          </form>
         </div>
       </div>
       <div class="main-map">
+        <div id="map"></div>
         <div class="main-map-feedback">
-          <p class="main-map-feedback-adress"></p>
-          <p class="main-map-feedback-phone"></p>
+          <div class="main-map-feedback-adress">
+            <h2>Адрес главного офиса и офлайн магазина:</h2>
+            <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          </div>
+          <div class="main-map-feedback-phone">
+            <h2>Для заказов по телефону:</h2>
+            <p>8 812 450-25-25</p>
+            <span>(с 10 до 20 ежедневно)</span>
+          </div>
           <a class="btn" href="#">Форма обратной связи</a>
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer-social-block">
-        <a class="btn" href="#"></a>
-        <a class="btn" href="#"></a>
-        <a class="btn" href="#"></a>
-        <a class="btn" href="#"></a>
-      </div>
-      <div class="main-footer-documents">
-        <a class="link" href="#"></a>
-        <a class="link" href="#"></a>
-        <a class="link" href="#"></a>
-        <a class="link" href="#"></a>
-      </div>
-      <div class="main-footer-copyright">
-        <a class="link" href="#"></a>
-      </div>
-    </footer>
-  </body>
+        <a class="btn" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.4" viewBox="0 0 31.375 31.4">
+            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about=""/>
+            </rdf:RDF>
+          </x:xmpmeta><?xpacket end="w"?></metadata>
+          <path class="social_btn-1" d="M38.427,2355.17a15.69,15.69,0,1,1-15.692,15.69A15.688,15.688,0,0,1,38.427,2355.17Zm9.137,10.81a7.331,7.331,0,0,1-2.092.57,3.663,3.663,0,0,0,1.6-2.02,7.4,7.4,0,0,1-2.313.89,3.645,3.645,0,0,0-6.207,3.32,10.316,10.316,0,0,1-7.507-3.81,3.655,3.655,0,0,0,1.127,4.87,3.68,3.68,0,0,1-1.65-.46c0,0.02,0,.03,0,0.05a3.651,3.651,0,0,0,2.922,3.57,3.788,3.788,0,0,1-.959.13,3.859,3.859,0,0,1-.685-0.07,3.643,3.643,0,0,0,3.4,2.53,7.29,7.29,0,0,1-4.524,1.56,8.286,8.286,0,0,1-.869-0.05,10.354,10.354,0,0,0,15.946-8.73c0-.16,0-0.31-0.011-0.47A7.328,7.328,0,0,0,47.565,2365.98Z" transform="translate(-22.75 -2355.16)"/>
+        </svg>
+      </a>
+      <a class="btn" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31.376" height="31.41" viewBox="0 0 31.376 31.41">
+          <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about=""/>
+          </rdf:RDF>
+        </x:xmpmeta><?xpacket end="w"?></metadata>
+        <path class="social_btn-2" d="M87.865,2355.23a15.69,15.69,0,1,1-15.692,15.69A15.688,15.688,0,0,1,87.865,2355.23Zm6.272,23.61a1.745,1.745,0,0,0,1.745-1.75v-12.31a1.743,1.743,0,0,0-1.745-1.74H81.809a1.743,1.743,0,0,0-1.745,1.74v12.31a1.745,1.745,0,0,0,1.745,1.75H94.136Zm-1.375-9.1a4.921,4.921,0,1,1-9.529,0h-1.38v6.78a0.609,0.609,0,0,0,.611.61H93.529a0.609,0.609,0,0,0,.611-0.61v-6.78H92.761ZM88,2368.13a2.848,2.848,0,1,1,0,5.68A2.84,2.84,0,0,1,88,2368.13Zm3.7-3.31H93.56a0.609,0.609,0,0,1,.611.61v1.86a0.609,0.609,0,0,1-.611.61H91.7a0.609,0.609,0,0,1-.611-0.61v-1.86A0.609,0.609,0,0,1,91.7,2364.82Z" transform="translate(-72.188 -2355.22)"/>
+      </svg>
+    </a>
+    <a class="btn" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about=""/>
+        </rdf:RDF>
+      </x:xmpmeta><?xpacket end="w"?></metadata>
+      <path class="social_btn-3" d="M136.865,2355.23a15.69,15.69,0,1,1-15.692,15.69A15.687,15.687,0,0,1,136.865,2355.23Zm0.773,24.99v-9.29h2.743l0.285-3.09h-3.028l0-1.86c0-.89.085-1.25,1.367-1.25h1.764v-3.43h-2.792c-3.294,0-4.082,1.54-4.082,4.34v2.2h-1.889v3.09H133.9v9.29h3.738Z" transform="translate(-121.188 -2355.22)"/>
+    </svg>
+  </a>
+  <a class="btn" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+      <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about=""/>
+      </rdf:RDF>
+    </x:xmpmeta><?xpacket end="w"?></metadata>
+    <path class="social_btn-4" d="M185.865,2355.23a15.69,15.69,0,1,1-15.692,15.69A15.687,15.687,0,0,1,185.865,2355.23Zm5.968,18.25a3.1,3.1,0,0,0-.758-2.2,3.7,3.7,0,0,0-2.016-1.09v-0.07a2.881,2.881,0,0,0,1.371-1.14,3.211,3.211,0,0,0,.5-1.77,3.133,3.133,0,0,0-.362-1.52,2.6,2.6,0,0,0-1.091-1.05,4.514,4.514,0,0,0-1.446-.48,17.993,17.993,0,0,0-2.269-.11h-4.8v13.59H186.4a8.906,8.906,0,0,0,2.331-.25,4.774,4.774,0,0,0,1.686-.86,3.583,3.583,0,0,0,1.032-1.27,3.909,3.909,0,0,0,.384-1.78h0Zm-4.373-5.59a1.5,1.5,0,0,0-.169-0.67,1,1,0,0,0-.527-0.5,2.11,2.11,0,0,0-.8-0.17c-0.309,0-.767-0.01-1.375-0.01h-0.237v2.88h0.43c0.583,0,.994-0.01,1.229-0.02a2.045,2.045,0,0,0,.726-0.19,1.129,1.129,0,0,0,.563-0.53,1.9,1.9,0,0,0,.157-0.79h0Zm0.856,5.53a1.673,1.673,0,0,0-.255-0.99,1.533,1.533,0,0,0-.767-0.54,2.658,2.658,0,0,0-.853-0.13c-0.362-.01-0.848-0.01-1.456-0.01h-0.63v3.4h0.184c0.888,0,1.5,0,1.843-.02a2.867,2.867,0,0,0,1.04-.24,1.381,1.381,0,0,0,.68-0.59A1.813,1.813,0,0,0,188.316,2373.42Z" transform="translate(-170.188 -2355.22)"/>
+  </svg>
+</a>
+</div>
+<div class="main-footer-documents">
+  <a class="link" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14.562" height="12.66" viewBox="0 0 14.562 12.66">
+      <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about=""/>
+      </rdf:RDF>
+    </x:xmpmeta><?xpacket end="w"?></metadata>
+    <path class="documents_heart" d="M284.606,2365.73s7.285-3.6,7.285-8.22c0-5.13-5.5-5.94-7.3-1.71m0.049,9.93s-7.285-3.6-7.285-8.22c0-5.13,5.5-5.94,7.3-1.71" transform="translate(-277.344 -2353.06)"/>
+  </svg>
+  Для поставщиков
+</a>
+<a class="link" href="#">О производстве</a>
+<a class="link" href="#">Наши документы</a>
+<a class="link" href="#">Экологические стандарты</a>
+</div>
+<div class="main-footer-copyright">
+  <a class="link" href="#"></a>
+</div>
+</footer>
+</div>
+<script src="js/script.js">
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCptuQzV8nl8x1uLBsGyHuRYzI95zKmM3I&callback=initMap">
+async defer>
+</script>
+
+</body>
 </html>
