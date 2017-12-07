@@ -49,40 +49,93 @@ input[type="radio"] {
   margin-left: 163px;
 }
 
-.main-header-navigation ul {
+.main-header-navigation-menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-.main-header-navigation li {
+.main-header-navigation-menu > li {
   display: inline-block;
   vertical-align: top;
 }
 
-.main-header-navigation a {
+.main-header-navigation-menu > li > a {
   display: inline-block;
-  padding: 0 14px;
   position: relative;
-  font-size: 16px;
-  line-height: 32px;
-  text-decoration: none;
   text-align: center;
   color: #fff;
+  padding: 0 14px;
+  font-size: 16px;
+  line-height: 32px;
   border-radius: 25px;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.4);
   text-underline-position: under;
 }
 
-.main-header-navigation a:hover {
+.main-header-navigation-menu > li > a:hover {
   background-color: #f7f6f3;
   color: #000;
   text-decoration: none;
 }
 
-.main-header-navigation a:active {
+.main-header-navigation-menu > li > a:active {
   box-shadow: inset 0 2px 1px 0 #696969;
+}
+
+.main-header-navigation-menu .catalog:hover ~ .main-header-navigation-menu-submenu,
+.main-header-navigation-menu .catalog:focus ~ .main-header-navigation-menu-submenu,
+.main-header-navigation-menu-submenu:hover {
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+.main-header-navigation-menu-submenu {
+  visibility: hidden;
+  position: absolute;
+  top: 38px;
+  left: -8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 143px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+.main-header-navigation-menu-submenu > li > a {
+  display: block;
+  font-size: 14px;
+  line-height: 34px;
+  padding-left: 21px;
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.main-header-navigation-menu-submenu > li:first-child {
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.main-header-navigation-menu-submenu > li:first-child > a {
+  font-weight: 600;
+}
+
+.main-header-navigation-menu-submenu > li > a:hover {
+  background-color: #fbded7;
+}
+
+.main-header-navigation-menu-submenu > li > a:active {
+  background-color: #f6b5a5;
+}
+
+.main-header-navigation-menu-submenu .active {
+  background-color: #d07058;
 }
 
 .main-header-user {
@@ -215,7 +268,7 @@ input[type="radio"] {
   position: relative;
   width: 860px;
   height: 252px;
-  padding-top: 339px;
+  margin-top: 339px;
   overflow: hidden;
 }
 
@@ -224,7 +277,6 @@ input[type="radio"] {
   left: 0;
   top: 508px;
   width: 79px;
-
 }
 
 .slider-controls label {
