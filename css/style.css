@@ -106,6 +106,7 @@ input[type="radio"] {
   overflow: hidden;
   transition: 0.5s;
   transform: scaleY(0);
+  transform-origin: top;
 }
 
 .main-header-navigation-menu-submenu > li > a {
