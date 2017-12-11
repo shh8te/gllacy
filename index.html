@@ -31,7 +31,17 @@
         </ul>
       </nav>
       <ul class="main-header-user">
-        <li class="main-header-user_search"><a href="#"></a></li><li class="main-header-user_login"><a href="#">Вход</a></li><li class="main-header-user_cart"><a href="#">Пусто</a></li>
+        <li class="main-header-user_search">
+          <a href="#"></a>
+          <div class="search">
+            <form class="search-form" action="index.html" method="get">
+              <input type="text" name="search" id="search">
+              <label for="search">Что ищем?</label>
+            </form>
+          </div>
+        </li>
+        <li class="main-header-user_login"><a href="#">Вход</a></li>
+        <li class="main-header-user_cart"><a href="#">Пусто</a></li>
       </ul>
       <div class="main-header-contacts">
         <span>С 10 до 20, ежедневно</span>
@@ -122,8 +132,8 @@
           <p>Подпишитесь на нашу сладкую рассылку <br> и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спать и не слать всякой не нужной ерудны. Честно =)</p>
           <form class="subscribe-email" action="index.html" method="post">
             <input type="text" name="email" value="" id="email">
-            <label for="email"></label>
-            <input class="btn" type="submit" name="" value="Отправить">
+            <label for="email">Электронная почта</label>
+            <input class="btn" type="submit" name="subscribe-email-submit" value="Отправить">
           </form>
         </div>
       </div>
