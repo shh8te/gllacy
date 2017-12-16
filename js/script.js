@@ -26,6 +26,20 @@ search.addEventListener('blur', function(e) {
 	this.classList.remove('active');
 });
 
+var login = document.querySelector('.main-header-user_login .login-form input');
+
+login.addEventListener('focus', function(e) {
+	this.classList.add('active');
+});
+
+login.addEventListener('blur', function(e) {
+	if (this.value.length > 0) {
+		return;
+	}
+
+	this.classList.remove('active');
+});
+
 function initMap() {
 	var gllacy = {
 		lat: 59.938536,
