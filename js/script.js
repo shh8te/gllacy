@@ -26,13 +26,27 @@ search.addEventListener('blur', function(e) {
 	this.classList.remove('active');
 });
 
-var login = document.querySelector('.main-header-user_login .login-form input');
+var login = document.querySelector('#login-email');
 
 login.addEventListener('focus', function(e) {
 	this.classList.add('active');
 });
 
 login.addEventListener('blur', function(e) {
+	if (this.value.length > 0) {
+		return;
+	}
+
+	this.classList.remove('active');
+});
+
+var password = document.querySelector('#login-password');
+
+password.addEventListener('focus', function(e) {
+	this.classList.add('active');
+});
+
+password.addEventListener('blur', function(e) {
 	if (this.value.length > 0) {
 		return;
 	}
