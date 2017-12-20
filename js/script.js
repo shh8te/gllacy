@@ -1,58 +1,38 @@
-var emailFeedback = document.querySelector('.subscribe-email input[type="text"]');
-
-emailFeedback.addEventListener('focus', function(e) {
+function classListAdd (e) {
 	this.classList.add('active');
-});
+};
 
-emailFeedback.addEventListener('blur', function(e) {
+function classListRemove (e) {
 	if (this.value.length > 0) {
 		return;
 	}
 
-	this.classList.remove('active');
-});
+	this.classList.remove('active');	
+};
+
+var emailFeedback = document.querySelector('.subscribe-email input[type="text"]');
+
+emailFeedback.addEventListener('focus', classListAdd);
+
+emailFeedback.addEventListener('blur', classListRemove);
 
 var search = document.querySelector('.main-header-user_search .search-form input');
 
-search.addEventListener('focus', function(e) {
-	this.classList.add('active');
-});
+search.addEventListener('focus', classListAdd);
 
-search.addEventListener('blur', function(e) {
-	if (this.value.length > 0) {
-		return;
-	}
-
-	this.classList.remove('active');
-});
+search.addEventListener('blur', classListRemove);
 
 var login = document.querySelector('#login-email');
 
-login.addEventListener('focus', function(e) {
-	this.classList.add('active');
-});
+login.addEventListener('focus', classListAdd);
 
-login.addEventListener('blur', function(e) {
-	if (this.value.length > 0) {
-		return;
-	}
-
-	this.classList.remove('active');
-});
+login.addEventListener('blur', classListRemove);
 
 var password = document.querySelector('#login-password');
 
-password.addEventListener('focus', function(e) {
-	this.classList.add('active');
-});
+password.addEventListener('focus', classListAdd);
 
-password.addEventListener('blur', function(e) {
-	if (this.value.length > 0) {
-		return;
-	}
-
-	this.classList.remove('active');
-});
+password.addEventListener('blur', classListRemove);
 
 function initMap() {
 	var gllacy = {
