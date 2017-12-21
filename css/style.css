@@ -127,7 +127,7 @@ input[type="radio"] {
   text-underline-position: under;
 }
 
-.main-header-navigation-menu > li > a:hover {
+.main-header-navigation-menu > li:hover > a {
   background-color: #f7f6f3;
   color: #000;
   text-decoration: none;
@@ -448,18 +448,18 @@ input[type="radio"] {
   background-position: 0 -171px;
 }
 
-.main-header-user > li> a:hover {
+.main-header-user > li:hover > a {
   background-color: #f7f6f3;
   color: #000;
 }
 
-.main-header-user_search a:hover::before {
+.main-header-user_search:hover a::before {
   background-image: url("../img/icons.png");
   background-repeat: no-repeat;
   background-position: 0px -252px;
 }
 
-.main-header-user_login a:hover::before {
+.main-header-user_login:hover a::before {
   background-image: url("../img/icons.png");
   background-repeat: no-repeat;
   background-position: 0 -112px;
