@@ -1,7 +1,7 @@
 const targetsArr = [...document.querySelectorAll('.class-toggling')];
 
 function toggleActiveClass(input) {
-  input.parentNode.classList.toggle('visible');
+  input.closest('.visibility').classList.toggle('visibility-animation')
 
   if (input.value) return;
 
