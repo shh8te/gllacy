@@ -1,38 +1,17 @@
-function classListAdd (e) {
-	this.classList.add('active');
-};
+const targetsArr = [...document.querySelectorAll('.class-toggling')];
 
-function classListRemove (e) {
-	if (this.value.length > 0) {
-		return;
-	}
+function toggleActiveClass(input) {
+  input.parentNode.classList.toggle('visible');
 
-	this.classList.remove('active');	
-};
+  if (input.value) return;
 
-var emailFeedback = document.querySelector('.subscribe-email input[type="text"]');
+  input.classList.toggle('active');
+}
 
-emailFeedback.addEventListener('focus', classListAdd);
-
-emailFeedback.addEventListener('blur', classListRemove);
-
-var search = document.querySelector('.main-header-user_search .search-form input');
-
-search.addEventListener('focus', classListAdd);
-
-search.addEventListener('blur', classListRemove);
-
-var login = document.querySelector('#login-email');
-
-login.addEventListener('focus', classListAdd);
-
-login.addEventListener('blur', classListRemove);
-
-var password = document.querySelector('#login-password');
-
-password.addEventListener('focus', classListAdd);
-
-password.addEventListener('blur', classListRemove);
+targetsArr.forEach(elem => {
+ elem.addEventListener('focus', (event) => toggleActiveClass(event.target));
+ elem.addEventListener('blur', (event) => toggleActiveClass(event.target));
+});
 
 function initMap() {
 	var gllacy = {

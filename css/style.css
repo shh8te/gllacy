@@ -80,6 +80,10 @@ input[type="radio"] {
   height: 5px;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .main-header {
   position: relative;
 }
