@@ -81,9 +81,9 @@ input[type="radio"] {
 }
 
 .visibility-animation {
-  visibility: visible;
+  visibility: hidden;
   transition: 0.3s;
-  transform: scale(1, 1);
+  transform: scale(0, 0);
   transform-origin: top right;
 }
 
