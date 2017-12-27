@@ -8,6 +8,15 @@ function toggleActiveClass(target, isBlur) {
   } else {
     target.closest('.visibility').style.visibility="visible";
     target.closest('.visibility').style.transform="scale(1, 1)";
+    console.log(target);
+    console.log(target.closest('.button-link'));
+    console.log(target.closest('.button-link').parentNode.classList.contains('main-header-user_login'));
+
+    if (target.closest('.button-link').parentNode.classList.contains('main-header-user_login')) {
+      target.closest('.button-link').style.backgroundPosition="0 -112px";
+    } else {
+      target.closest('.button-link').style.backgroundPosition="0px -252px";
+    };
   };
 
   if (target.value) return;
