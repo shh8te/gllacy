@@ -1,16 +1,23 @@
 const targetsArr = [...document.querySelectorAll('.class-toggling')];
 
-function toggleActiveClass(input) {
-  input.closest('.visibility').classList.toggle('visibility-animation')
+function toggleActiveClass(target, isBlur) {
 
-  if (input.value) return;
+  if (isBlur) {
+    target.closest('.visibility').style.visibility="";
+    target.closest('.visibility').style.transform="";
+  } else {
+    target.closest('.visibility').style.visibility="visible";
+    target.closest('.visibility').style.transform="scale(1, 1)";
+  };
 
-  input.classList.toggle('active');
+  if (target.value) return;
+
+  target.classList.toggle('active');
 }
 
 targetsArr.forEach(elem => {
- elem.addEventListener('focus', (event) => toggleActiveClass(event.target));
- elem.addEventListener('blur', (event) => toggleActiveClass(event.target));
+ elem.addEventListener('focus', (event) => toggleActiveClass(event.target, false));
+ elem.addEventListener('blur', (event) => toggleActiveClass(event.target, true));
 });
 
 function initMap() {
