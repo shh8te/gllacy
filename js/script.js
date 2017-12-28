@@ -1,22 +1,14 @@
 const targetsArr = [...document.querySelectorAll('.class-toggling')];
 
+
 function toggleActiveClass(target, isBlur) {
 
   if (isBlur) {
-    target.closest('.visibility').style.visibility="";
-    target.closest('.visibility').style.transform="";
+    target.closest('.visibility').style.visibility = "";
+    target.closest('.visibility').style.transform = "";
   } else {
-    target.closest('.visibility').style.visibility="visible";
-    target.closest('.visibility').style.transform="scale(1, 1)";
-    console.log(target);
-    console.log(target.closest('.button-link'));
-    console.log(target.closest('.button-link').parentNode.classList.contains('main-header-user_login'));
-
-    if (target.closest('.button-link').parentNode.classList.contains('main-header-user_login')) {
-      target.closest('.button-link').style.backgroundPosition="0 -112px";
-    } else {
-      target.closest('.button-link').style.backgroundPosition="0px -252px";
-    };
+    target.closest('.visibility').style.visibility = "visible";
+    target.closest('.visibility').style.transform = "scale(1, 1)";
   };
 
   if (target.value) return;

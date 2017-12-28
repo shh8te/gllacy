@@ -376,13 +376,13 @@ input[type="radio"] {
   transition: 0.3s;
 }
 
-.main-header-user_login .login-form label[for="login-email"] {
+.main-header-user_login .login-form label[for="login"] {
   position: absolute;
   top: 30px;
   left: 27px;
 }
 
-.main-header-user_login .login-form label[for="login-password"] {
+.main-header-user_login .login-form label[for="password"] {
   position: absolute;
   top: 82px;
   left: 27px;
@@ -426,13 +426,13 @@ input[type="radio"] {
   outline: none;
 }
 
-.main-header-user_login .login-form input[type="text"].active ~ label[for="login-email"] {
+.main-header-user_login .login-form input[type="text"].active ~ label[for="login"] {
   transform: translate(-22px, -30px) scale(0.7);
   color: #8fbdec;
   transition: 0.3s;
 }
 
-.main-header-user_login .login-form input[type="password"].active ~ label[for="login-password"] {
+.main-header-user_login .login-form input[type="password"].active ~ label[for="password"] {
   transform: translate(-7px, -28px) scale(0.7);
   color: #8fbdec;
   transition: 0.3s;
